@@ -1,11 +1,9 @@
-# Test
-
 {
     'variables': {
     },
     'targets': [
         {
-            'target_name': 'node-opus',
+            'target_name': 'node-libopus',
             'dependencies': [
                 'deps/binding.gyp:libopus'
             ],
@@ -41,7 +39,7 @@
                 "<!(node -e \"require('nan')\")"
             ],
             'sources': [
-                'src/node-opus.cc',
+                'src/libopus.cc',
             ],
             'link_settings': {
                 'ldflags': [

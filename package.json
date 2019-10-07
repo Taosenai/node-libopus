@@ -1,46 +1,21 @@
 {
-  "name": "node-opus",
-  "description": "NodeJS native binding to OPUS",
-  "version": "0.3.2",
-  "author": "Mikko Rantanen <jubjub@jubjubnest.net>",
-  "homepage": "https://github.com/Rantanen/node-opus",
-  "bugs": "https://github.com/Rantanen/node-opus/issues",
+  "name": "node-libopus",
+  "description": "Native node.js bindings to libopus 1.3.1",
+  "version": "0.1.0-libopus131",
   "license": "MIT",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/Rantanen/node-opus.git"
-  },
-  "//": "Platform limitations is due to lack of config.h files. See README.md for more information.",
   "os": [
-    "linux",
-    "darwin",
-    "win32",
-    "freebsd"
+    "win32"
   ],
   "cpu": [
-    "x64",
-    "arm",
-    "arm64",
-    "ia32"
+    "x64"
   ],
   "engines": {
     "node": ">=5.10.0"
   },
+  "gypfile": true,
   "dependencies": {
     "bindings": "~1.2.1",
     "commander": "^2.9.0",
     "nan": "^2.14.0"
-  },
-  "optionalDependencies": {
-    "ogg-packet": "^1.0.0"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^5.2.0",
-    "ogg": "^1.2.5",
-    "stream-equal": "^1.0.0"
   }
 }
